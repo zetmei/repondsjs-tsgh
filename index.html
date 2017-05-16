@@ -1,160 +1,1259 @@
-
 <!DOCTYPE html>
 <html lang="zh-tw">
-  <head>
-    <title>政務綜合處資訊網</title>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三軍總醫院</title>
+    <link rel="shortcut icon" sizes="16x16" href="images/layout/favicon.ico">
     <!-- css -->
     <link href="css/bootstrap3.3.7.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
     <!--[if lte IE 8]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 
+</html>
 </head>
 
 <body>
-<!-- 選單 -->
-<header>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="logo navbar-brand" href="#">政務綜合處資訊網</a>
-        </div>
-        
-          <ul class="nav navber-signin">
-            <li><a href="javascript:;">簽入</a></li>
-            <li><a href="javascript:;">簽出</a></li>
-          </ul>
-        <div id="navbar" class="collapse navbar-collapse">
-          <div class="armyPic"><img class="imgRwd" src="images/armypic.png"></div>
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">行政系統<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">行程管理系統</a></li>
-                <li><a href="#">值班管理系統</a></li>
-                <li><a href="#">公告管理系統</a></li>
-                <li><a href="#">差旅管制系統</a></li>
-              </ul>
-            </li>
-            <li><a href="javascript:;">國軍入口</a></li>
-            <li><a href="javascript:;">政務辦公室</a></li>
-            <li><a href="javascript:;">國防部ＱＡ</a></li>
-            <li><a href="javascript:;">公務郵件</a></li>
-            <li><a href="javascript:;">行政系統</a></li>
+    <div class="row-offcanvas row-offcanvas-right">
+        <!-- header -->
+        <header>
+            <div class="header1 container">
+                <div class="col-md-12">
+                    <!-- logo -->
+                    <div class="logo"><a href="index.html" title="首頁">三軍總醫院</a></div>
+                    <!-- menu 1 -->
+                    <nav class="navM md-hidden">
+                        <li><a href="javascript:;" title="上方選單" accesskey="U">:::</a></li>
+                        <li><a href="https://www.tsgh.ndmctsgh.edu.tw" target="_top" title="回首頁">回首頁</a></li>
+                        <li><a href="/unit/10000/11281/web" target="_top" title="網站導覽">網站導覽</a></li>
+                        <li><a href="/unit/10000/11465/web" target="_top" title="母嬰親善">母嬰親善</a></li>
+                        <li><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/english/10000" target="_top" title="English">English</a></li>
+                        <li><a href="/rss/191" target="_blank" title="RSS">RSS</a></li>
+                        <li><a href="http://www.mnd.gov.tw/glossary.aspx" target="_blank" title="雙語詞彙">雙語詞彙</a></li>
+                        <li><a href="/unit/10000/12091/web" target="_top" title="分類檢索">分類檢索</a></li>
+                    </nav>
+                    <div class="head-setting md-hidden">
+                        <ul class="backgroundcolor">
+                            <li class="color in"><a href="javascript:;" title="背景顏色">背景顏色</a></li>
+                            <li class="cube a" id="cubeA">
+                                <a href="javascript:;" title="白色"></a>
+                            </li>
+                            <li class="cube b">
+                                <a href="javascript:;" title="灰色"></a>
+                            </li>
+                            <li class="cube c">
+                               <a href="javascript:;" title="淺藍色"></a>
+                            </li>
+                        </ul>
+                        <ul class="fontsize">
+                            <li class="small"><a href="javascript:;" title="小">小</a></li>
+                            <li class="normal in"><a href="javascript:;" title="中">中</a></li>
+                            <li class="big"><a href="javascript:;" title="大">大</a></li>
+                        </ul>
+                    </div>
+                    <div class="searchbar md-hidden">
+                        <span class="searchphoneno">
+                        熱門搜尋： 
+                        <a href="/search?q=衛福部" target="_blank" title="衛福部">衛福部</a>、
+                        <a href="/search?q=官兵體檢" target="_blank" title="官兵體檢">官兵體檢</a>、
+                        <a href="/search?q=軍醫規定" target="_blank" title="軍醫規定">軍醫規定</a>
+                    </span>
+                        <input type="text" name="searchinput" maxlength="255" placeholder="請輸入關鍵字" title="請輸入關鍵字">
+                        <button class="a">搜尋</button>
+                        <a class="button b" href="javascript:;" title="進階搜尋">進階搜尋</a>
+                    </div>
+                    <!-- mobile-menu -->
+                    <div class="menu hidden-lg" data-toggle="offcanvas">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- menu2 -->
+            <div class="md-hidden header2">
+                <nav class="navB">
+                    <ul class="sub1">
+                        <li>
+                            <a href="javascript:;" title="認識三總"><img src="images/layout/head1.png" alt="認識三總">認識三總</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/unit/10000/11764/web" target="_self" title="院長的話">院長的話</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11763/web" target="_self" title="今日三總">今日三總</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11756" target="_self" title="院區導覽">院區導覽</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/Info2.aspx?year=2017" target="_blank" title="大事紀要">大事紀要</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/index.aspx" target="_blank" title="榮譽事蹟">榮譽事蹟</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/Media_2.aspx?year=2017" target="_blank" title="新聞中心">新聞中心</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10033/23244/web" target="_blank" title="無菸醫院">無菸醫院</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102341/20223/web" target="_blank" title="國醫中心職務官舍環境監測報告">國醫中心職務官舍環境監測報告</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="分院介紹"><img src="images/layout/head2.png" alt="分院介紹">分院介紹</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="http://songshan.tsgh.ndmctsgh.edu.tw" target="_blank" title="松山分院">松山分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://beitou.tsgh.ndmctsgh.edu.tw" target="_blank" title="北投分院">北投分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://afph.tsgh.ndmctsgh.edu.tw" target="_blank" title="澎湖分院">澎湖分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://keelung.tsgh.ndmctsgh.edu.tw" target="_blank" title="基隆分院">基隆分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw" target="_blank" title="汀州院區">汀州院區</a>
+                                </li>
+                                <li>
+                                    <a href="http://tpoc.tsgh.ndmctsgh.edu.tw" target="_blank" title="台北門診中心">台北門診中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="單位介紹"><img src="images/layout/head3.png" alt="單位介紹">單位介紹</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/sub/191/10/102349" target="_self" title="外科部">外科部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/5/102349" target="_self" title="內科部">內科部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/3/102349" target="_self" title="小兒及婦產部">小兒及婦產部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/16/102349" target="_self" title="其他專科">其他專科</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/14/102349" target="_self" title="行政部門">行政部門</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="教學研究"><img src="images/layout/head4.png" alt="教學研究">教學研究</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10045/21847/web" target="_blank" title="臨床醫事人員培訓計畫聯合訓練計畫">臨床醫事人員培訓計畫聯合訓練計畫</a>
+                                </li>
+                                <li>
+                                    <a href="http://elearning.ndmctsgh.edu.tw/" target="_blank" title="e-Learning">e-Learning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="衛教資訊"><img src="images/layout/head5.png" alt="衛教資訊">衛教資訊</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/unit/10000/11844/web" target="_top" title="疾病資訊">疾病資訊</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/12129/web" target="_top" title="衛教資訊">衛教資訊</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11855/web" target="_top" title="預防保健">預防保健</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwu.tsgh.ndmctsgh.edu.tw/phd/pharmacypractice/main_DI.asp" target="_blank" title="用藥教育專區">用藥教育專區</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="常見問答"><img src="images/layout/head7.png" alt="常見問答">常見問答</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="人才招募"><img src="images/layout/head6.png" alt="人才招募">人才招募</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="醫世代電子報"><img src="images/layout/head8.png" alt="醫世代電子報">醫世代電子報</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="醫世代電子報"><img src="images/layout/head8.png" alt="醫世代電子報">醫世代電子報</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content page_index">
+            <!-- page content -->
+            <section class="section_glory">
+                <div class="container">
+                    <div class="row">
+                        <div class="section_glory_L col-md-8">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/index/img01.png" alt="...">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/index/img01.png" alt="...">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section_glory_R col-md-4">
+                            <h1>我們的榮耀</h1>
+                            <ul class="glory">
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx' target='_blank' title='耳鼻喉頭頸外科部李日清主任團隊榮獲2016年國家生技醫療品質獎「銀獎」暨SNQ國家品質標章'>耳鼻喉頭頸外科部李日清主任團隊榮獲2016年國家..</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx' target='_blank' title='本院2016年榮獲國家生技醫療品質獎銀獎及八項SNQ國家品質標章，品質備受肯定'>本院2016年榮獲國家生技醫療品質獎銀獎及八項..</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx?PageNo=2' target='_blank' title='泌尿外科查岱龍副院長、整形外科戴念梓主任、核子醫學部鄭澄意主任、感染科林永崇主任榮獲第13屆國家新創獎 '>泌尿外科查岱龍副院長、整形外科戴念梓主任、..</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx?PageNo=2' target='_blank' title='本院榮獲「2016年第十四屆遠見五星服務獎」醫療院所類首獎'>本院榮獲「2016年第十四屆遠見五星服務獎」醫療..</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx?PageNo=2' target='_blank' title='本院林石化院長榮獲第26屆醫療奉獻獎'>本院林石化院長榮獲第26屆醫療奉獻獎</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx' target='_blank' title='復健部以「關節舒暢、人生精彩-血友病關節病變之全方位復健照顧」主題，榮獲2016年SNQ國家品質標章'>復健部以「關節舒暢、人生精彩-血友病關節病變..</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx' target='_blank' title='急診部以「建立電子轉診網絡-提升急診傷病患醫療照護品質」主題，榮獲2016年SNQ國家品質標章'>急診部以「建立電子轉診網絡-提升急診傷病患醫療照護品質」主題，榮獲2016年SNQ國家品質標章</a>
+                                </li>
+                                <li>
+                                    <a href='https://www1.ndmctsgh.edu.tw/PMD2/index.aspx' target='_blank' title='新陳代謝科以「結合血糖機與智慧型手機於雲端專業照護平台用於全天候糖尿病人之照護系統」主題，榮獲2016年SNQ國家品質標章'>新陳代謝科以「結合血糖機與智慧型手機於雲端專業照護平台用於全天候糖尿病人之照護系統」主題，榮獲2016年SNQ國家品質標章</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_contentTab1">
+                <div class="container">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#contentTab1" aria-controls="contentTab1" data-toggle="tab">特色醫療中心</a></li>
+                            <li><a href="#contentTab2" aria-controls="contentTab2" data-toggle="tab">國際醫療中心</a></li>
+                            <li><a href="#contentTab3" aria-controls="contentTab3" data-toggle="tab">交通指引</a></li>
+                            <li><a href="#contentTab4" aria-controls="contentTab4" data-toggle="tab">為民服務</a></li>
+                            <li><a href="#contentTab5" aria-controls="contentTab5" data-toggle="tab">線上申辦</a></li>
+                            <li><a href="#contentTab6" aria-controls="contentTab2" data-toggle="tab">重大政策</a></li>
+                            <li><a href="#contentTab7" aria-controls="contentTab3" data-toggle="tab">資訊圖像化</a></li>
+                            <li><a href="#contentTab8" aria-controls="contentTab4" data-toggle="tab">政府資訊公開</a></li>
+                            <li><a href="#contentTab9" aria-controls="contentTab4" data-toggle="tab">政府資訊公開</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="contentTab1">
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10002/12203/" target="_top" title="人體生物資料庫">人體生物資料庫</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10003/12206/" target="_top" title="人體試驗審議會(IRB)">人體試驗審議會(IRB)</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10008/12431/" target="_top" title="中暑防治中心">中暑防治中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10015" target="_top" title="正子斷層造影中心">正子斷層造影中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10072/15521/" target="_top" title="汀洲思源護理之家">汀洲思源護理之家</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10019/13532/" target="_top" title="自殺防治中心">自殺防治中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10020/13535" target="_top" title="血友病中心">血友病中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10024/13614" target="_top" title="呼吸照護病房">呼吸照護病房</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10028" target="_top" title="社會服務室">社會服務室</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10035/14086" target="_top" title="海底暨高壓氧醫學部">海底暨高壓氧醫學部</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10043/14600" target="_top" title="健康管理中心">健康管理中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10025/13695/" target="_top" title="婦女保健中心">婦女保健中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10047/14658" target="_top" title="祥瑞病房">祥瑞病房</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10051/14844" target="_top" title="復健醫學部">復健醫學部</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10055/15055" target="_top" title="臨床試驗中心">臨床試驗中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10057/15161" target="_top" title="實證醫學中心">實證醫學中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10062/15234" target="_top" title="癌症中心">癌症中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10067/15451" target="_top" title="醫學美容中心">醫學美容中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10068" target="_top" title="醫學影像中心">醫學影像中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10069/15457" target="_top" title="藥事審議會">藥事審議會</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10070/15460" target="_top" title="藥酒癮防治中心">藥酒癮防治中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10071/15495" target="_top" title="護理之家">護理之家</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102340" target="_top" title="睡眠中心">睡眠中心</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10013/17191/" target="_top" title="植牙中心">植牙中心</a></span>
+                            </div>
+                            <div class="tab-pane" id="contentTab2">
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102347/22990/" title="國際醫療服務網">國際醫療服務網</a></span>
+                            </div>
+                            <div class="tab-pane" id="contentTab3">
+                                <span><a href="https://www.tsgh.ndmctsgh.edu.tw/unit/10000/12077/web" title="內湖院區交通指引">內湖院區交通指引</a></span>
+                            </div>
+                            <div class="tab-pane" id="contentTab4">
+                                <span><a href="http://wwws.tsgh.ndmctsgh.edu.tw/ap/his/input.asp" target="_blank" title="診斷證明書及病歷資料申請">診斷證明書及病歷資料申請</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102345/11840/web" target="_top" title="電子病歷專區">電子病歷專區</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10062/18083/web" target="_top" title="病友團體">病友團體</a></span>
+                                <span><a href="\files\web\191\menu\content\貼心手冊.pdf" target="_blank" title="貼心手冊">貼心手冊</a></span>
+                                <span><a href="/unit/102311/11898/web" target="_top" title="病人(家屬)意見反映流程">病人(家屬)意見反映流程</a></span>
+                                <span><a href="http://wwws.tsgh.ndmctsgh.edu.tw/netnews/" target="_blank" title="民意論壇">民意論壇</a></span>
+                                <span><a href="http://wwws.tsgh.ndmctsgh.edu.tw/NetNewx/postitmail.aspx" target="_blank" title="意見反映信箱">意見反映信箱</a></span>
+                                <span><a href="http://wwwu.tsgh.ndmctsgh.edu.tw/qad/voting/index.html" target="_blank" title="線上滿意度問卷">線上滿意度問卷</a></span>
+                                <span><a href="/unit/10000/20220/web" target="_top" title="常用表單下載">常用表單下載</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102354/12123/web" target="_top" title="醫療品質暨病人安全">醫療品質暨病人安全</a></span>
+                                <span><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102317/20224/web" target="_top" title="性騷擾防治">性騷擾防治</a></span>
+                                <span><a href="https://www1.ndmctsgh.edu.tw/QueryList/" target="_blank" title="檢驗分析報告檢測進度查詢">檢驗分析報告檢測進度查詢</a></span>
+                                <span><a href="/unit/102360/24434" target="_top" title="醫療收費標準">醫療收費標準</a></span>
+                            </div>
+                            <div class="tab-pane" id="contentTab5">
+                                <a href="http://wwws.tsgh.ndmctsgh.edu.tw/ap/his/input.asp" target="_blank" title="線上申辦診斷證明書及病歷資料申請">線上申辦診斷證明書及病歷資料申請</a>
+                            </div>
+                            <div class="tab-pane" id="contentTab6">
+                                <a href="http://www.mohw.gov.tw/cht/Ministry/DM2_P.aspx?f_list_no=5&amp;fod_list_no=0&amp;doc_no=510" target="_blank" title="衛福部醫療政策">衛福部醫療政策</a>
+                                <a href="\files\web\192\menu\content\105年度服務創新精進方案執行計畫.pdf" target="_blank" title="本院服務創新精進方案實施計畫(105年)">本院服務創新精進方案實施計畫(105年)</a>
+                            </div>
+                            <div class="tab-pane" id="contentTab7">
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\意見反應流程.pdf">病人(家屬)意見反映流程</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\洗手5時機.pdf">乾洗手5時機</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\乾洗手.pdf">乾洗手</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\口腔顎面外科-拔牙流程圖.pdf">口腔顎面外科-拔牙流程圖</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\口腔贗復科-看診流程圖.pdf">口腔贗復科-看診流程圖</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\牙周病治療流程圖.pdf" target="_blank">牙周病科-牙周病治療流程圖</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\牙體復形暨根管治療科-根管治療流程圖.pdf&#9;" style="font-size: 14pt;">牙體復形暨根管治療科-根管治療流程圖</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\家庭牙科暨口腔診斷科-初診流程圖.pdf">家庭牙科暨口腔診斷科-初診流程圖</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\齒顎矯正暨兒童牙科-兒童牙科流程.pdf" target="_blank">齒顎矯正暨兒童牙科-兒童牙科流程</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\齒顎矯正暨兒童牙科-齒顎矯正科流程.pdf" target="_blank">齒顎矯正暨兒童牙科-齒顎矯正科流程</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\正子斷層造影中心流程介紹.pdf&#9;">正子斷層造影中心流程介紹</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\抽血櫃台自動報到介紹.pdf">抽血櫃台自動報到介紹</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/files/web/192/contents/102356/%E5%A9%A6%E5%A5%B3%E7%94%A2%E6%AA%A2%E9%96%80%E8%A8%BA%E6%B5%81%E7%A8%8B.pdf" target="_blank" title="婦女產檢門診流程.pdf">婦女部產檢門診流程</a>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw\files\web\192\contents\102356\關節超音波處理流程圖.pdf" target="_blank">關節超音波處理流程圖</a>
+                            </div>
+                            <div class="tab-pane" id="contentTab8">
+                                <a href="https://www.tsgh.ndmctsgh.edu.tw/unit/10000/12090/web" target="_blank">政府資訊公開</a>
+                            </div>
+                            <div class="tab-pane" id="contentTab9">
+                                <a href="https://www.tsgh.ndmctsgh.edu.tw/unit/10000/12090/web" target="_blank">政府資訊公開</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_content3">
+                <div class="container">
+                    <div class="row">
+                        <div class="content3_L service col-xs-12 col-sm-12 col-md-4">
+                            <div class="sec secA">
+                                <h3>網路掛號</h3>
+                                <a href="https://www2.ndmctsgh.edu.tw/webreg/default.aspx" target="_blank" title="網路掛號">
+                                    <div class="secimgA "><img src="images/layout/sec01.png" alt="網路掛號" title="網路掛號"></div>
+                                </a>
+                            </div>
+                            <div class="sec secB">
+                                <h3>健康檢查</h3>
+                                <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10043/14600" target="_top" title="健康檢查">
+                                    <div class="secimgB"><img src="images/layout/sec02.png" alt="健康檢查" title="健康檢查"></div>
+                                </a>
+                            </div>
+                            <div class="sec secC">
+                                <h3>門急診相關</h3>
+                                <a>
+                                    <div class="secimgC"><img src="images/layout/sec03.png" alt="門急診相關" title="門急診相關"></div>
+                                </a>
+                            </div>
+                            <div class="sec secD">
+                                <h3>住院相關</h3>
+                                <a>
+                                    <div class="secimgD"><img src="images/layout/sec04.png" alt="住院相關" title="住院相關"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content3_C news col-xs-12 col-sm-12 col-md-4">
+                            
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs labnews" role="tablist">
+                            <li role="presentation" class="active"><a href="#textlb01" aria-controls="textlb01" role="tab" data-toggle="tab">最新消息</a></li>
+                            <li role="presentation"><a href="#textlb02" aria-controls="textlb02" role="tab" data-toggle="tab">研討會</a></li>
+                            <li role="presentation"><a href="#textlb03" aria-controls="textlb03" role="tab" data-toggle="tab">活動</a></li>
+                            <li role="presentation"><a href="#textlb04" aria-controls="textlb04" role="tab" data-toggle="tab">疫情防治</a></li>
+                            <li role="presentation"><a href="#textlb05" aria-controls="textlb05" role="tab" data-toggle="tab">健保訊息</a></li>
+                          </ul>
 
-          </ul>
-        </div>
-      </div>
-    </nav>
-</header>
-<!-- 內容 -->
-<div class="ctwrap"> 
-    <div class="bootstrapslider">
-        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-              <div class="carousel-inner">
-                    <div class="item active"> <img src="images/img01.jpg"> </div>
-                    <div class="item"> <img src="images/img02.jpg"> </div>
-                    <div class="item"> <img src="images/img03.jpg"> </div>
-              </div>
-          </div>
-    </div>
-    <div class="blockwarp">
-         <div class="container">
-      <!-- 區塊 -->
-      <div class="row">
-        <div class="armyblock col-md-4">
-          <div class="armycard announcement">
-              <h3><span><i class="fa fa-bullhorn" aria-hidden="true"></i>公告專區</span></h3>
-              <ul>
-                  <li>「體位區分標準」第2條、第6條修正</li>
-                  <li>重申財政部推廣使用附條碼繳款書繳納稅款</li>
-                  <li>本部第48次廉政工作會報廉政宣教暨主席指裁示事項</li>
-                  <li>「國軍協助災害防救辦法」第16條修正</li>
-              </ul>
-              <p class="eraser"><a class="pull-right btn btn-default" href="#" role="button">查看更多</a></p>
-              <div class="clear"></div>
-          </div>
-        </div>
-        <div class="armyblock col-md-4">
-          <div class="armycard schedule">
-              <h3><span><i class="fa fa-fighter-jet" aria-hidden="true"></i>本日行程</span></h3>
-              <div class="innerwidth ">
-                <p>104年12月1日 星期一</p>
-                <p><i class="aaaaa fa fa-check" aria-hidden="true"></i>0900  工作進度及逾期公文檢討會</p>
-                <p><i class="fa fa-check" aria-hidden="true"></i>1500  國家發展委員會第21次委員會議</p>
-              </div>
-              <p><a class="pull-right btn btn-default" href="#" role="button">查看更多</a></p>
-              <div class="clear"></div>
-          </div>
-       </div>
-        <div class="armyblock col-md-4">
-          <div class="armycard personmessage">
-              <h3><span><i class="fa fa-stack-exchange" aria-hidden="true"></i>個人化訊息</span></h3>
-              <div class="innerwidth">
-                <p>您好!!</p>
-                <p>各人化訊息<br>兩行呈現方式</p>
-              </div>
-          </div>
-       </div>
-      <!-- 下排 -->
-        <div class="armyblock col-md-4">
-          <div class="armycard onduty">
-              <h3><span><i class="fa fa-star" aria-hidden="true"></i>值班資訊</span></h3><div class="innerwidth row">
-                  <div class="col-md-6 sepline">
-                        <h5>今日</h5>
-                        <p class="duty">部值日官<span>李oo</span></p>
-                        <p class="duty">異地辦公留守<span>黃oo</span></p>
-                  </div>
-                  <div class="col-md-6">
-                        <h5>明日</h5>
-                        <p class="duty">部值日官<span>李oo</span></p>
-                        <p class="duty">異地辦公留守<span>黃oo</span></p>
-                  </div>
-              </div>
-          </div>
-        </div>
-        <div class="armyblock col-md-4">
-          <div class="armycard member">
-              <h3><span><i class="fa fa-users" aria-hidden="true"></i>人員現況</span></h3>
-              <div class="innerwidth">
-                <p>人員現況1</p>
-                <p>人員現況2</p>
-              </div>
-          </div>
-       </div>
-        <div class="armyblock col-md-4">
-          <div class="armycard relax">
-              <h3><span><i class="fa fa-leaf" aria-hidden="true"></i>茶餘飯後</span></h3>
-              <div class="innerwidth">
-                <p><a href="javascript:;">本日新聞</a></p>
-                <p><a href="javascript:;">留言板</a></p>
-              </div>
-          </div>
-       </div>
+                          <!-- Tab panes -->
+                          <div class="tab-content textbg">
+                            <div role="tabpanel" class="text tab-pane active" id="textlb01">
+                                    <ul>
+                                        <li>
+                                            <a href="/news/191/10000/1009" target="_blank" title="[徵才] 106年度醫院癌症診療品質精進計畫助理招聘(另開新視窗)">
+                                                <span class="text01">[徵才] 106年度醫院癌症診療品質精進計畫助理招聘</span>
+                                                <span class="time">2017/05/03</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/news/191/10000/1007" target="_blank" title="106年5月感控園地宣導資料-認識百日咳(另開新視窗)">
+                                                <span class="text01">106年5月感控園地宣導資料-認識百日咳</span>
+                                                <span class="time">2017/05/03</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/news/191/10000/1004" target="_blank" title="母親節義演活動(另開新視窗)">
+                                                <span class="text01">母親節義演活動</span>
+                                                <span class="time">2017/05/01</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/news/191/10000/995" target="_blank" title="106年4月感控園地宣導資料-認識麻疹病毒感染 (另開新視窗)">
+                                                <span class="text01">106年4月感控園地宣導資料-認識麻疹病毒感染 </span>
+                                                <span class="time">2017/04/26</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/news/191/10000/925" target="_blank" title="台北門診中心工時病管員錄取公告(另開新視窗)">
+                                                <span class="text01">台北門診中心工時病管員錄取公告</span>
+                                                <span class="time">2017/04/17</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/news/191/10000/899" target="_blank" title="全民健康保險對象西醫門診、急診應自行負擔費用修正公告(另開新視窗)">
+                                                <span class="text01">全民健康保險對象西醫門診、急診應自行負擔費用修正公告</span>
+                                                <span class="time">2017/04/09</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a id="more" href="#">更多</a>
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb02">
+                                 <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">新訊息2</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                    </ul>
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb03">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">新訊息3</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                    </ul>
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb04">
+                                    
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">新訊息4</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                    </ul>
+                            </div>
+                            <div role="tabpanel" class="text tab-pane" id="textlb05">
+                                
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">新訊息5</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                        <li>
+                                            <a href="">
+                                                <span class="text01">醫策會提供「醫病共享決策SDM」輔助工具平台，提供醫護同仁參考使用</span>
+                                                <span class="time">2016.12.31</span>
+                                        </li>
+                                        </a>
+                                    </ul>
+                            </div>
+                          </div>
 
-      </div>
+
+
+                        </div>
+                        <div class="content3_R facebook col-xs-12 col-sm-12 col-md-4">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftsghpmd%2F%3Fref%3Daymt_homepage_panel&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" id="iface" width="340" height="500" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowtransparency="true" title="三軍總醫院粉絲團"></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="artmidSubNav">
+                            <div class="artmidSubNavX artmidSubNavclose"><i class="fa fa-times" aria-hidden="true"></i></div>
+                            <div class="artmidSubNavFox artmidSubNavclose"></div>
+                            <ul id='artmidSubNav01'>
+                            </ul>
+                            <ul id='artmidSubNav02'>
+                            </ul>
+                            <ul id='artmidSubNav03'>
+                                <li><a href='http://www2.ndmctsgh.edu.tw/PatientNo/PatientNoWeb.aspx' target='_blank' title='醫師看診進度'>醫師看診進度</a></li>
+                                <li><a href='http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102328/11454/web' target='_top' title='門診時刻表'>門診時刻表</a></li>
+                                <li><a href='http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102329/11825/web' target='_top' title='轉診服務'>轉診服務</a></li>
+                                <li><a href='/unit/10000/11836/web' target='_top' title='病症查詢'>病症查詢</a></li>
+                                <li><a href='https://www1.ndmctsgh.edu.tw/serviceclientele/DocState.aspx' target='_blank' title='醫師停代診'>醫師停代診</a></li>
+                                <li><a href='https://www1.ndmctsgh.edu.tw/ErOnlineNews/ErOnLineData.aspx' target='_blank' title='急診即時訊息'>急診即時訊息</a></li>
+                                <li><a href='\files\web\191\menu\icon\早期療育流程圖.pdf' target='_blank' title='早期療育就診流程圖'>早期療育就診流程圖</a></li>
+                            </ul>
+                            <ul id='artmidSubNav04'>
+                                <li><a href='\files\web\191\menu\icon\病人候床入院暨出院須知.pdf ' target='_blank' title='病人候床入院暨出院須知'>病人候床入院暨出院須知</a></li>
+                                <li><a href='\files\web\192\contents\102355\病床收費標準.pdf' target='_blank' title='病床收費標準'>病床收費標準</a></li>
+                                <li><a href='http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102355/24187/web' target='_top' title='病房差額收費標準'>病房差額收費標準</a></li>
+                                <li><a href='\files\web\191\menu\icon\住院優免表一覽表.pdf' target='_blank' title='住院費用優免一覽表'>住院費用優免一覽表</a></li>
+                                <li><a href='\files\web\192\contents\102355\住院病人伙食費計價標準.pdf' target='_blank' title='住院病人伙食費計價標準'>住院病人伙食費計價標準</a></li>
+                                <li><a href='https://www1.ndmctsgh.edu.tw/tsghnhibed/admnhibed.asp' target='_blank' title='全院病床動態'>全院病床動態</a></li>
+                                <li><a href='\files\web\191\menu\icon\三軍總醫院病人自費特材一覽表.pdf' target='_blank' title='病人自費特材一覽表'>病人自費特材一覽表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section_otherTab">
+                <div class="container">
+                    <div>
+                        <a accesskey="R" href="#aside" title="下方超連結區" tabindex="4000">:::</a>
+                        <a name="aside"></a>
+                    </div>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#otherTab1" title="友善連結" aria-controls="otherTab1" data-toggle="tab">友善連結</a></li>
+                            <li><a href="#otherTab2" title="便民幫手APP" aria-controls="otherTab2" data-toggle="tab">便民幫手<span class="md-hidden">APP</span></a></li>
+                            <li><a  href="https://www.viewtaiwan.com/embed.php?v=1ihdciTGJRA&amp;showinfo=1" target="_blank" title="360度院區導覽">360度<span class="md-hidden">院區導覽</span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCPiJaSnyFuKiRM9ehQvUnJQ/feed" target="_blank" title="YouTube">YouTube</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="otherTab1">
+                                        <div class="regular slider">
+                                            <div>
+                                                <a href="/unit/10000/12109/web" target="_self" title="杏網相連">
+                                                 <img src="images/connect/n01.jpg" alt="杏網相連"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://afterthatday.blogspot.com/" target="_blank" title="病後人生">
+                                                    <img src="images/connect/n02.jpg" alt="病後人生"></a>
+                                            </div>
+                                            <div>
+                                                 <a href="http://www.nhi.gov.tw/webdata/webdata.aspx?menu=&amp;menu_id=&amp;wd_id=&amp;webdata_id=3120" target="_blank" title="健保好健保不能倒">
+                                                    <img src="images/connect/n03.jpg" alt="健保好健保不能倒"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.cdc.gov.tw/diseaseinfo.aspx?treeid=8d54c504e820735b&amp;nowtreeid=dec84a2f0c6fac5b&amp;tid=9D2E1B3A862F06FB" target="_blank" title="狂犬病預防專區">
+                                                    <img src="images/connect/n04.jpg" alt="狂犬病預防專區"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.ndmctsgh.edu.tw/web/library/default.asp" target="_blank" title="國防醫學院圖書館">
+                                                    <img src="images/connect/n05.jpg" alt="國防醫學院圖書館"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.gov.tw/" target="_blank" title="電子化政府入口">
+                                                    <img src="images/connect/02.gif" alt="電子化政府入口"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://webcat.tpml.edu.tw/FastBookJFBWeb/default.aspx" target="_blank" title="FAST BOOK 全自動借書站 書籍檢索">
+                                                    <img src="images/connect/04.gif" alt="全自動借書站書籍檢索"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://wwwu.tsgh.ndmctsgh.edu.tw/chc/hpd/1_index.asp" target="_self" title="社區健康服務">
+                                                    <img src="images/connect/05.gif" alt="社區健康服務"></a>
+                                            </div>
+                                            <div>
+                                                <a href="http://itaiwan.gov.tw/" target="_blank" title="全民上網愛台灣">
+                                                    <img src="images/connect/07.gif" alt="全民上網愛台灣"></a>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="tab-pane" id="otherTab2">
+                                <div class="row small-up-1 medium-up-8 large-up-9">
+                                    <div class="column column-block">
+                                        <img src="images/index/QR01.png" alt="便民幫手IOS版" title="便民幫手IOS版">
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i>便民幫手IOS版</span>
+                                    </div>
+                                    <div class="column column-block">
+                                        <img src="images/index/QR02.png" alt="操作手冊" title="操作手冊">
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i>操作手冊</span>
+                                    </div>
+                                    <div class="column column-block">
+                                        <img src="images/index/QR03.png" alt="Android版" title="Android版">
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i>Android版</span>
+                                    </div>
+                                    <div class="column column-block">
+                                        <img src="images/index/QR04.png" alt="網路掛號" title="網路掛號">
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i>網路掛號</span>
+                                    </div>
+                                    <div class="column column-block">
+                                        <img src="images/index/QR05.png" alt="看診進度" title="看診進度">
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i>看診進度</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="otherTab3">3...</div>
+                            <div class="tab-pane" id="otherTab4">4..</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page content  end-->
+        </div>
+        <!--footer1 -->
+        <section class="footerNav">
+            <div class="container">
+                <div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="今日三總">今日三總</a></li>
+                                <li><a href="javascript:;" title="院區導覽">院區導覽</a></li>
+                                <li><a href="javascript:;" title="大事紀要">大事紀要</a></li>
+                                <li><a href="javascript:;" title="榮譽事蹟">榮譽事蹟</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="新聞中心">新聞中心</a></li>
+                                <li><a href="javascript:;" title="無菸醫院">無菸醫院</a></li>
+                                <li><a href="javascript:;" title="國醫中心職務官舍環境監測報告">國醫中心職務官舍環境監測報告</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>分院介紹</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="松山分院">松山分院</a></li>
+                                <li><a href="javascript:;" title="北投分院">北投分院</a></li>
+                                <li><a href="javascript:;" title="澎湖分院">澎湖分院</a></li>
+                                <li><a href="javascript:;" title="基隆分院">基隆分院</a></li>
+                                <li><a href="javascript:;" title="汀州院區">汀州院區</a></li>
+                                <li><a href="javascript:;" title="台北門診中心">台北門診中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>單位介紹</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="外科部">外科部</a></li>
+                                <li><a href="javascript:;" title="內科部">內科部</a></li>
+                                <li><a href="javascript:;" title="小兒及婦產部">小兒及婦產部</a></li>
+                                <li><a href="javascript:;" title="其他專科">其他專科</a></li>
+                                <li><a href="javascript:;" title="行政部門">行政部門</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>教學研究</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="臨床醫事人員培訓計畫聯合訓練計畫">臨床醫事人員培訓計畫聯合訓練計畫</a></li>
+                                <li><a href="javascript:;" title="e-Learning">e-Learning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>衛教資訊</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="疾病資訊">疾病資訊</a></li>
+                                <li><a href="javascript:;" title="衛教資訊">衛教資訊</a></li>
+                                <li><a href="javascript:;" title="預防保健">預防保健</a></li>
+                                <li><a href="javascript:;" title="用藥教育專區">用藥教育專區</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 visible-lg-block">
+                    <hr>
+                </div>
+                <div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>其他服務</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="常見問答">常見問答</a></li>
+                                <li><a href="javascript:;" title="人才招募">人才招募</a></li>
+                                <li><a href="javascript:;" title="醫世代電子報">醫世代電子報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-2</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="今日三總">今日三總</a></li>
+                                <li><a href="javascript:;" title="院區導覽">院區導覽</a></li>
+                                <li><a href="javascript:;" title="大事紀要">大事紀要</a></li>
+                                <li><a href="javascript:;" title="榮譽事蹟">榮譽事蹟</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-3</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-4</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-5</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-6</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="col-md-8 col-md-push-2">
+                    <nav class="navF">
+                        <li class="first"><a href="javascript:;" title="下方選單" accesskey="D">:::</a></li>
+                        <li><a href="javasceript:;" title="網站隱私權政策">網站隱私權政策</a></li>
+                        <li><a href="javasceript:;" title="網站安全政策宣告">網站安全政策宣告</a></li>
+                        <li><a href="javasceript:;" title="政府網站資料開放宣告">政府網站資料開放宣告</a></li>
+                        <li class="last"><a href="javasceript:;" title="個資法保護聲明">個資法保護聲明</a></li>
+                    </nav>
+                    <p>
+                        <i class="fa fa-eye" aria-hidden="true"></i>瀏覽人數：17550864&nbsp;人&nbsp;&nbsp;
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>網站更新時間：2017/4/24&nbsp;上午&nbsp;09:59:24
+                        <br>
+                        <i class="fa fa-building-o" aria-hidden="true"></i>內湖院區: (114)台北市內湖區成功路二段325號
+                        <br>
+                        <i class="fa fa-building-o" aria-hidden="true"></i>汀州院區：(100)台北市汀州路三段40號 總機: (02)2365-9055
+                        <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i>(02)8792-7111(共12線自動跳線) 軍用610385 人工預約專線 ：(02)87927222
+                        <br>
+                        <span class="copyright">Copyright (C)2017 Best viewed with IE 10.0 or higher with 1024*768 resolution<br>禁止任何網際網路服務業者轉錄其網路資訊之內容供人點閱</span>
+                        <br>
+                        <span class="nosmoke">
+                            <img src="images/layout/icon012x.gif" alt="無障礙標章" /><span>本院為無菸醫院，院區內全面禁菸</span></span>
+                    </p>
+                </div>
+                <div class="footericon col-xs-6 col-md-2 col-md-pull-8">
+                    <div class="footicon01">
+                        <a href="http://www.gov.tw/" target="_blank" title="政府網頁">
+                            <img src="images/layout/icon07.png" alt="政府網頁" />
+                        </a>
+                    </div>
+                    <div class="footicon02">
+                        <a href="#" title="無障礙標章">
+                            <img src="images/layout/icon08.png" alt="無障礙標章" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footericon col-xs-6 col-md-2">
+                    <div class="footicon01">
+                        <a href="http://www.gov.tw/" target="_blank" title="政府網頁">
+                            <img src="images/layout/icon07.png" alt="政府網頁" />
+                        </a>
+                    </div>
+                    <div class="footicon02">
+                        <a href="#" title="無障礙標章">
+                            <img src="images/layout/icon08.png" alt="無障礙標章" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- offcanvas -->
+        <div class="col-sm-3 sidebar-offcanvas offcanvaswrap">
+            <div class="sidenav_title offcanvasback">
+                <h3>三軍總醫院 返回</h3>
+            </div>
+            <ul class="sidenav_ul" id="sidenav_ul01">
+                <li><a href="index.html" title="回首頁-手機選單">回首頁</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="認識三總-手機選單"><img class="small" src="images/layout/head1.png" alt="認識三總" title="認識三總">認識三總</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="/unit/10000/11764/web" target="_self" title="院長的話-手機選單">院長的話</a>
+                        </li>
+                        <li>
+                            <a href="/unit/10000/11763/web" target="_self" title="今日三總-手機選單">今日三總</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="分院介紹-手機選單"><img class="small" src="images/layout/head2.png" alt="分院介紹" title="分院介紹">分院介紹</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="http://songshan.tsgh.ndmctsgh.edu.tw" target="_blank" title="松山分院-手機選單">松山分院</a>
+                        </li>
+                        <li>
+                            <a href="http://beitou.tsgh.ndmctsgh.edu.tw" target="_blank" title="北投分院-手機選單">北投分院</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="單位介紹-手機選單"><img class="small" src="images/layout/head3.png" alt="單位介紹" title="單位介紹">單位介紹</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="教學研究-手機選單"><img class="small" src="images/layout/head4.png" alt="教學研究" title="教學研究-手機選單">教學研究</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;"><img class="small" src="images/layout/head5.png" alt="衛教資訊" title="衛教資訊-手機選單">衛教資訊</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="常見問題-手機選單"><img class="small" src="images/layout/head6.png" alt="常見問答" title="常見問答">常見問答</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="人才招募-手機選單"><img class="small" src="images/layout/head7.png" alt="人才招募" title="人才招募">人才招募</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="醫世代電子報-手機選單"><img class="small" src="images/layout/head8.png" alt="醫世代電子報" title="醫世代電子報">醫世代電子報</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+            </ul>
+            <div class="otherToolWarp">
+                <div class="searchbar">
+                    <input type="text" name="searchinput" maxlength="255" placeholder="請輸入關鍵字" title="手機版搜尋欄位-請輸入關鍵字">
+                    <button class="a">搜尋</button>
+                </div>
+                <nav class="navM">
+                    <li><a href="/unit/10000/11281/web" target="_top" title="網站導覽-手機選單">網站導覽</a></li>
+                    <li><a href="/unit/10000/11465/web" target="_top" title="母嬰親善-手機選單">母嬰親善</a></li>
+                    <li><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/english/10000" target="_top" title="mobile's English">English</a></li>
+                    <li><a href="/rss/191" target="_blank" title="手機版RSS-手機選單">RSS</a></li>
+                    <li><a href="http://www.mnd.gov.tw/glossary.aspx" target="_blank" title="手機版雙語詞彙-手機選單">雙語詞彙</a></li>
+                    <li><a href="/unit/10000/12091/web" target="_top" title="分類檢索-手機選單">分類檢索</a></li>
+                </nav>
+                <div class="head-setting">
+                    <ul class="backgroundcolor">
+                        <li class="color in"><a href="javascript:;" title="背景顏色-手機選單">背景顏色</a></li>
+                        <li class="cube a" id="cubeA">
+                            <a href="javascript:;" title="白色背景"></a>
+                        </li>
+                        <li class="cube b">
+                            <a href="javascript:;" title="灰色背景"></a>
+                        </li>
+                        <li class="cube c">
+                            <a href="javascript:;" title="淺藍色背景"></a>
+                        </li>
+                    </ul>
+                    <ul class="fontsize">
+                        <li class="color in"><a href="javascript:;" title="文字大小-手機選單">文字大小</a></li>
+                        <li class="small"><a href="javascript:;" title="小-手機選單">小</a></li>
+                        <li class="normal in"><a href="javascript:;" title="中-手機選單">中</a></li>
+                        <li class="big"><a href="javascript:;" title="大-手機選單">大</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/.sidebar-offcanvas-->
     </div>
-</div>
 
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap3.3.7.js"></script></html> 
+    <script src="js/rwdgrid.js"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
     <script src="js/layout.js"></script>
 
+<script>
+    
+    $(function() {
 
+        ////index  ////multipul silder 
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            autoplay:true,
+            slidesToShow: 6,
+            slidesToScroll: 6,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false
+                  }
+                }
+              ]
+        });
+    });
+
+    
+////////////index 服務項目
+$(document).ready(function() {
+    
+     $(".artmidSubNavclose").click(function() {
+          artmidhide();
+          $(".artmidSubNav").hide();
+        })
+     
+     
+     $(".secimgA").click(function() {
+            artmidhide();
+            $("#artmidSubNav01").toggle(500);
+        })
+     $(".secimgB").click(function() {
+            artmidhide();
+            $("#artmidSubNav02").toggle(500);
+        })
+      $(".secimgC").click(function() {
+            artmidhide();
+            $("#artmidSubNav03").toggle(500);
+        })
+       $(".secimgD").click(function() {
+            artmidhide();
+            $("#artmidSubNav04").toggle(500);
+        })
+
+
+
+   function artmidhide()
+   {
+     $(".artmidSubNav").show();
+     $("#artmidSubNav01").hide(0);
+     $("#artmidSubNav02").hide(0);
+     $("#artmidSubNav03").hide(0);
+     $("#artmidSubNav04").hide(0);
+   }
+
+});
+</script>
 </body>
-
-</html>
