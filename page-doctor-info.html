@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫師介紹</title>
+    <link rel="shortcut icon" sizes="16x16" href="images/layout/favicon.ico">
+    <!-- css -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+    <!--[if lte IE 8]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+
+
+</html>
+</head>
+
+<body>
+    <div class="row-offcanvas row-offcanvas-right">
+        <!-- header -->
+        <header>
+            <div class="header1 container">
+                <div class="col-md-12">
+                    <!-- logo -->
+                    <div class="logo"><a href="index.html" title="首頁">三軍總醫院</a></div>
+                    <!-- menu 1 -->
+                    <nav class="navM md-hidden">
+                        <li><a href="javascript:;" title="上方選單" accesskey="U">:::</a></li>
+                        <li><a href="https://www.tsgh.ndmctsgh.edu.tw" target="_top" title="回首頁">回首頁</a></li>
+                        <li><a href="/unit/10000/11281/web" target="_top" title="網站導覽">網站導覽</a></li>
+                        <li><a href="/unit/10000/11465/web" target="_top" title="母嬰親善">母嬰親善</a></li>
+                        <li><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/english/10000" target="_top" title="English">English</a></li>
+                        <li><a href="/rss/191" target="_blank" title="RSS">RSS</a></li>
+                        <li><a href="http://www.mnd.gov.tw/glossary.aspx" target="_blank" title="雙語詞彙">雙語詞彙</a></li>
+                        <li><a href="/unit/10000/12091/web" target="_top" title="分類檢索">分類檢索</a></li>
+                    </nav>
+                    <div class="head-setting md-hidden">
+                        <ul class="backgroundcolor">
+                            <li class="color in"><a href="javascript:;" title="背景顏色">背景顏色</a></li>
+                            <li class="cube a" id="cubeA">
+                                <a href="javascript:;" title="白色"></a>
+                            </li>
+                            <li class="cube b">
+                                <a href="javascript:;" title="灰色"></a>
+                            </li>
+                            <li class="cube c">
+                               <a href="javascript:;" title="淺藍色"></a>
+                            </li>
+                        </ul>
+                        <ul class="fontsize">
+                            <li class="small"><a href="javascript:;" title="小">小</a></li>
+                            <li class="normal in"><a href="javascript:;" title="中">中</a></li>
+                            <li class="big"><a href="javascript:;" title="大">大</a></li>
+                        </ul>
+                    </div>
+                    <div class="searchbar md-hidden">
+                        <span class="searchphoneno">
+                        熱門搜尋： 
+                        <a href="/search?q=衛福部" target="_blank" title="衛福部">衛福部</a>、
+                        <a href="/search?q=官兵體檢" target="_blank" title="官兵體檢">官兵體檢</a>、
+                        <a href="/search?q=軍醫規定" target="_blank" title="軍醫規定">軍醫規定</a>
+                    </span>
+                        <input type="text" name="searchinput" maxlength="255" placeholder="請輸入關鍵字" title="請輸入關鍵字">
+                        <button class="a">搜尋</button>
+                        <a class="button b" href="javascript:;" title="進階搜尋">進階搜尋</a>
+                    </div>
+                    <!-- mobile-menu -->
+                    <div class="menu hidden-lg" data-toggle="offcanvas">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- menu2 -->
+            <div class="md-hidden header2">
+                <nav class="navB">
+                    <ul class="sub1">
+                        <li>
+                            <a href="javascript:;" title="認識三總"><img src="images/layout/head1.png" alt="認識三總">認識三總</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/unit/10000/11764/web" target="_self" title="院長的話">院長的話</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11763/web" target="_self" title="今日三總">今日三總</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11756" target="_self" title="院區導覽">院區導覽</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/Info2.aspx?year=2017" target="_blank" title="大事紀要">大事紀要</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/index.aspx" target="_blank" title="榮譽事蹟">榮譽事蹟</a>
+                                </li>
+                                <li>
+                                    <a href="https://www1.ndmctsgh.edu.tw/PMD2/Media_2.aspx?year=2017" target="_blank" title="新聞中心">新聞中心</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10033/23244/web" target="_blank" title="無菸醫院">無菸醫院</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/102341/20223/web" target="_blank" title="國醫中心職務官舍環境監測報告">國醫中心職務官舍環境監測報告</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="分院介紹"><img src="images/layout/head2.png" alt="分院介紹">分院介紹</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="http://songshan.tsgh.ndmctsgh.edu.tw" target="_blank" title="松山分院">松山分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://beitou.tsgh.ndmctsgh.edu.tw" target="_blank" title="北投分院">北投分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://afph.tsgh.ndmctsgh.edu.tw" target="_blank" title="澎湖分院">澎湖分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://keelung.tsgh.ndmctsgh.edu.tw" target="_blank" title="基隆分院">基隆分院</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw" target="_blank" title="汀州院區">汀州院區</a>
+                                </li>
+                                <li>
+                                    <a href="http://tpoc.tsgh.ndmctsgh.edu.tw" target="_blank" title="台北門診中心">台北門診中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="單位介紹"><img src="images/layout/head3.png" alt="單位介紹">單位介紹</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/sub/191/10/102349" target="_self" title="外科部">外科部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/5/102349" target="_self" title="內科部">內科部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/3/102349" target="_self" title="小兒及婦產部">小兒及婦產部</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/16/102349" target="_self" title="其他專科">其他專科</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/191/14/102349" target="_self" title="行政部門">行政部門</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="教學研究"><img src="images/layout/head4.png" alt="教學研究">教學研究</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="http://wwwv.tsgh.ndmctsgh.edu.tw/unit/10045/21847/web" target="_blank" title="臨床醫事人員培訓計畫聯合訓練計畫">臨床醫事人員培訓計畫聯合訓練計畫</a>
+                                </li>
+                                <li>
+                                    <a href="http://elearning.ndmctsgh.edu.tw/" target="_blank" title="e-Learning">e-Learning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="衛教資訊"><img src="images/layout/head5.png" alt="衛教資訊">衛教資訊</a>
+                            <ul class="sub2">
+                                <li>
+                                    <a href="/unit/10000/11844/web" target="_top" title="疾病資訊">疾病資訊</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/12129/web" target="_top" title="衛教資訊">衛教資訊</a>
+                                </li>
+                                <li>
+                                    <a href="/unit/10000/11855/web" target="_top" title="預防保健">預防保健</a>
+                                </li>
+                                <li>
+                                    <a href="http://wwwu.tsgh.ndmctsgh.edu.tw/phd/pharmacypractice/main_DI.asp" target="_blank" title="用藥教育專區">用藥教育專區</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="常見問答"><img src="images/layout/head7.png" alt="常見問答">常見問答</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="人才招募"><img src="images/layout/head6.png" alt="人才招募">人才招募</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="醫世代電子報"><img src="images/layout/head8.png" alt="醫世代電子報">醫世代電子報</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="醫世代電子報"><img src="images/layout/head8.png" alt="醫世代電子報">醫世代電子報</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content pages_all">
+            <!-- page content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidenav_title">
+                            <h3>單位名稱置換<br>
+                                    <span class="english">MENU</span>
+                            </h3>
+                            <a href="javascript:;" class="sidenavMenu hidden-lg" title="手機版選單開關"></a>
+                        </div>
+                        <ul class="sidenav_ul md-hidden" id="sidemenu">
+                            <li><a href="javascript:;" title="胸腔外科">胸腔外科</a>
+                                <ul class="sidenav_ul_in"></ul> 
+                            </li>
+                            <li><a href="javascript:;" title="胸腔外科">胸腔外科</a>
+                                    <ul class="sidenav_ul_in">
+                                        <li>
+                                            <a href="javascript:;" title="第二層"><img src="images/layout/icon11.png" alt="">第二層</a>
+                                            <ul class="sidenav_ul_in2">
+                                                <li>
+                                                    <a href="javascrip:;" title="第三層"><img src="images/layout/icon11.png" alt="">第三層</a>
+                                                    <ul class="sidenav_ul_in3">
+                                                        <li>
+                                                            <a href="javascrip:;" title="第四層">第四層</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascrip:;" title="第四層">第四層</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascrip:;" title="第四層">第四層</a>
+                                                        </li>
+                                                    </ul> 
+
+                                                </li>
+                                                <li>
+                                                    <a href="javascrip:;" title="第三層"><img src="images/layout/icon11.png" alt="">第三層</a>
+                                                    <ul class="sidenav_ul_in3">
+                                                        <li>
+                                                            <a href="javascrip:;" title="第四層"><img src="images/layout/icon11.png" alt="">第四層</a>
+                                                             <ul class="sidenav_ul_in4">
+                                                                <li>
+                                                                    <a href="javascrip:;" title="第五層">第五層</a>
+                                                                </li>
+                                                            </ul> 
+                                                        </li>
+                                                    </ul> 
+                                                </li>
+                                            </ul> 
+                                        </li>
+                                        <li>
+                                            <a href="javascrip:;" title="第二層">第二層</a>
+                                        </li>
+                                    </ul> 
+                            </li>
+                            <li><a href="javascript:;">胸腔外科</a>
+                                    <ul class="sidenav_ul_in">
+                                        <li>
+                                            <a href="javascrip:;" title="第二層">第二層</a>
+                                        <li>
+                                            <a href="javascrip:;" title="第二層">第二層</a>
+                                        </li>
+                                    </ul> 
+                            </li>
+                        </ul>               
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="contenR">
+                            <div class="dortorIntro">
+                                <h2 class="breadcrum">胸腔外科<span><a href="javascript:;" title="外科部">&nbsp;/&nbsp; 外科部</a></span><span><a href="javascript:;" title="單位介紹">&nbsp;/&nbsp;單位介紹</a></span><span><a href="javascript:;" title="首頁">&nbsp;/&nbsp;首頁</a></span></h2>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <img class="img-responsive" src="images/doctor.png" alt="林建民醫師">
+                                    </div>
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>林建銘  醫師<br>
+                                    <span class="english">Lin jian min</span>
+                                    </h2>
+                                        <h3>專精領域<span></span></h3>
+                                        <p>小兒內分泌</p>
+                                        <h3>現職<span></span></h3>
+                                        <p>三軍總醫院小兒部主治醫師
+                                            <br>國防醫學院醫學系小兒學科講師</p>
+                                        <h3>學經歷<span></span></h3>
+                                        <p>中華民國小兒科專科醫師
+                                            <br>中華民國兒童內分泌專科醫師
+                                            <br>中華民國糖尿病暨內分泌學會專科醫師
+                                            <br>中華民國糖尿病衛教學會合格衛教人員
+                                            <br>台灣肥胖醫學專科醫師</p>
+                                        <h3>著作SCI<span></span></h3>
+                                        <p>著作Non-SCI Curriculum Vitae</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenR lower">
+                            <div class="dortorMore">
+                                <h2 class="breadcrum">胸腔外科<a href="page-doctor-list-img.html" title="查看更多">查看更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></h2>
+                                <div class="regular slider">
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="page-doctor-info.html" title="醫生介紹頁">
+                                            <img class="img-responsive" src="images/doctor-small.png" alt="醫生介紹頁">
+                                            <p>
+                                                林建民醫師
+                                                <br>
+                                                <span class="english">Lin jian min</span>
+                                                <br>
+                                                <span class="division">胸腔外科</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page content  end-->
+        </div>
+        <!--footer1 -->
+        <section class="footerNav">
+            <div class="container">
+                <div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="今日三總">今日三總</a></li>
+                                <li><a href="javascript:;" title="院區導覽">院區導覽</a></li>
+                                <li><a href="javascript:;" title="大事紀要">大事紀要</a></li>
+                                <li><a href="javascript:;" title="榮譽事蹟">榮譽事蹟</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="新聞中心">新聞中心</a></li>
+                                <li><a href="javascript:;" title="無菸醫院">無菸醫院</a></li>
+                                <li><a href="javascript:;" title="國醫中心職務官舍環境監測報告">國醫中心職務官舍環境監測報告</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>分院介紹</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="松山分院">松山分院</a></li>
+                                <li><a href="javascript:;" title="北投分院">北投分院</a></li>
+                                <li><a href="javascript:;" title="澎湖分院">澎湖分院</a></li>
+                                <li><a href="javascript:;" title="基隆分院">基隆分院</a></li>
+                                <li><a href="javascript:;" title="汀州院區">汀州院區</a></li>
+                                <li><a href="javascript:;" title="台北門診中心">台北門診中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>單位介紹</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="外科部">外科部</a></li>
+                                <li><a href="javascript:;" title="內科部">內科部</a></li>
+                                <li><a href="javascript:;" title="小兒及婦產部">小兒及婦產部</a></li>
+                                <li><a href="javascript:;" title="其他專科">其他專科</a></li>
+                                <li><a href="javascript:;" title="行政部門">行政部門</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>教學研究</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="臨床醫事人員培訓計畫聯合訓練計畫">臨床醫事人員培訓計畫聯合訓練計畫</a></li>
+                                <li><a href="javascript:;" title="e-Learning">e-Learning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockA">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>衛教資訊</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="疾病資訊">疾病資訊</a></li>
+                                <li><a href="javascript:;" title="衛教資訊">衛教資訊</a></li>
+                                <li><a href="javascript:;" title="預防保健">預防保健</a></li>
+                                <li><a href="javascript:;" title="用藥教育專區">用藥教育專區</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 visible-lg-block">
+                    <hr>
+                </div>
+                <div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>其他服務</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="常見問答">常見問答</a></li>
+                                <li><a href="javascript:;" title="人才招募">人才招募</a></li>
+                                <li><a href="javascript:;" title="醫世代電子報">醫世代電子報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-2</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="今日三總">今日三總</a></li>
+                                <li><a href="javascript:;" title="院區導覽">院區導覽</a></li>
+                                <li><a href="javascript:;" title="大事紀要">大事紀要</a></li>
+                                <li><a href="javascript:;" title="榮譽事蹟">榮譽事蹟</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-3</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-4</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-5</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-2 footer_blockB">
+                        <p class="footer_nav_title"><i class="fa fa-angle-double-right" aria-hidden="true"></i>認識三總2-6</p>
+                        <div class="footer_hidden">
+                            <ul class="footer_nav_ul footer_nav_ul01">
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                                <li><a href="javascript:;" title="院長的話">院長的話</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="col-md-8 col-md-push-2">
+                    <nav class="navF">
+                        <li class="first"><a href="javascript:;" title="下方選單" accesskey="D">:::</a></li>
+                        <li><a href="javasceript:;" title="網站隱私權政策">網站隱私權政策</a></li>
+                        <li><a href="javasceript:;" title="網站安全政策宣告">網站安全政策宣告</a></li>
+                        <li><a href="javasceript:;" title="政府網站資料開放宣告">政府網站資料開放宣告</a></li>
+                        <li class="last"><a href="javasceript:;" title="個資法保護聲明">個資法保護聲明</a></li>
+                    </nav>
+                    <p>
+                        <i class="fa fa-eye" aria-hidden="true"></i>瀏覽人數：17550864&nbsp;人&nbsp;&nbsp;
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>網站更新時間：2017/4/24&nbsp;上午&nbsp;09:59:24
+                        <br>
+                        <i class="fa fa-building-o" aria-hidden="true"></i>內湖院區: (114)台北市內湖區成功路二段325號
+                        <br>
+                        <i class="fa fa-building-o" aria-hidden="true"></i>汀州院區：(100)台北市汀州路三段40號 總機: (02)2365-9055
+                        <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i>(02)8792-7111(共12線自動跳線) 軍用610385 人工預約專線 ：(02)87927222
+                        <br>
+                        <span class="copyright">Copyright (C)2017 Best viewed with IE 10.0 or higher with 1024*768 resolution<br>禁止任何網際網路服務業者轉錄其網路資訊之內容供人點閱</span>
+                        <br>
+                        <span class="nosmoke">
+                            <img src="images/layout/icon012x.gif" alt="無障礙標章" /><span>本院為無菸醫院，院區內全面禁菸</span></span>
+                    </p>
+                </div>
+                <div class="footericon col-xs-6 col-md-2 col-md-pull-8">
+                    <div class="footicon01">
+                        <a href="http://www.gov.tw/" target="_blank" title="政府網頁">
+                            <img src="images/layout/icon07.png" alt="政府網頁" />
+                        </a>
+                    </div>
+                    <div class="footicon02">
+                        <a href="#" title="無障礙標章">
+                            <img src="images/layout/icon08.png" alt="無障礙標章" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footericon col-xs-6 col-md-2">
+                    <div class="footicon01">
+                        <a href="http://www.gov.tw/" target="_blank" title="政府網頁">
+                            <img src="images/layout/icon07.png" alt="政府網頁" />
+                        </a>
+                    </div>
+                    <div class="footicon02">
+                        <a href="#" title="無障礙標章">
+                            <img src="images/layout/icon08.png" alt="無障礙標章" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- offcanvas -->
+        <div class="col-sm-3 sidebar-offcanvas offcanvaswrap">
+            <div class="sidenav_title offcanvasback">
+                <h3>三軍總醫院 返回</h3>
+            </div>
+            <ul class="sidenav_ul" id="sidenav_ul01">
+                <li><a href="index.html" title="回首頁-手機選單">回首頁</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="認識三總-手機選單"><img class="small" src="images/layout/head1.png" alt="認識三總" title="認識三總">認識三總</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="/unit/10000/11764/web" target="_self" title="院長的話-手機選單">院長的話</a>
+                        </li>
+                        <li>
+                            <a href="/unit/10000/11763/web" target="_self" title="今日三總-手機選單">今日三總</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="分院介紹-手機選單"><img class="small" src="images/layout/head2.png" alt="分院介紹" title="分院介紹">分院介紹</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="http://songshan.tsgh.ndmctsgh.edu.tw" target="_blank" title="松山分院-手機選單">松山分院</a>
+                        </li>
+                        <li>
+                            <a href="http://beitou.tsgh.ndmctsgh.edu.tw" target="_blank" title="北投分院-手機選單">北投分院</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="單位介紹-手機選單"><img class="small" src="images/layout/head3.png" alt="單位介紹" title="單位介紹">單位介紹</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="教學研究-手機選單"><img class="small" src="images/layout/head4.png" alt="教學研究" title="教學研究-手機選單">教學研究</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;"><img class="small" src="images/layout/head5.png" alt="衛教資訊" title="衛教資訊-手機選單">衛教資訊</a>
+                    <ul class="sidenav_ul_in">
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="導覽列-手機選單">導覽列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="常見問題-手機選單"><img class="small" src="images/layout/head6.png" alt="常見問答" title="常見問答">常見問答</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="人才招募-手機選單"><img class="small" src="images/layout/head7.png" alt="人才招募" title="人才招募">人才招募</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+                <li>
+                    <a href="javascript:;" title="醫世代電子報-手機選單"><img class="small" src="images/layout/head8.png" alt="醫世代電子報" title="醫世代電子報">醫世代電子報</a>
+                    <ul class="sidenav_ul_in"></ul>
+                </li>
+            </ul>
+            <div class="otherToolWarp">
+                <div class="searchbar">
+                    <input type="text" name="searchinput" maxlength="255" placeholder="請輸入關鍵字" title="手機版搜尋欄位-請輸入關鍵字">
+                    <button class="a">搜尋</button>
+                </div>
+                <nav class="navM">
+                    <li><a href="/unit/10000/11281/web" target="_top" title="網站導覽-手機選單">網站導覽</a></li>
+                    <li><a href="/unit/10000/11465/web" target="_top" title="母嬰親善-手機選單">母嬰親善</a></li>
+                    <li><a href="http://wwwv.tsgh.ndmctsgh.edu.tw/english/10000" target="_top" title="mobile's English">English</a></li>
+                    <li><a href="/rss/191" target="_blank" title="手機版RSS-手機選單">RSS</a></li>
+                    <li><a href="http://www.mnd.gov.tw/glossary.aspx" target="_blank" title="手機版雙語詞彙-手機選單">雙語詞彙</a></li>
+                    <li><a href="/unit/10000/12091/web" target="_top" title="分類檢索-手機選單">分類檢索</a></li>
+                </nav>
+                <div class="head-setting">
+                    <ul class="backgroundcolor">
+                        <li class="color in"><a href="javascript:;" title="背景顏色-手機選單">背景顏色</a></li>
+                        <li class="cube a" id="cubeA">
+                            <a href="javascript:;" title="白色背景"></a>
+                        </li>
+                        <li class="cube b">
+                            <a href="javascript:;" title="灰色背景"></a>
+                        </li>
+                        <li class="cube c">
+                            <a href="javascript:;" title="淺藍色背景"></a>
+                        </li>
+                    </ul>
+                    <ul class="fontsize">
+                        <li class="color in"><a href="javascript:;" title="文字大小-手機選單">文字大小</a></li>
+                        <li class="small"><a href="javascript:;" title="小-手機選單">小</a></li>
+                        <li class="normal in"><a href="javascript:;" title="中-手機選單">中</a></li>
+                        <li class="big"><a href="javascript:;" title="大-手機選單">大</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/.sidebar-offcanvas-->
+    </div>
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/rwdgrid.js"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
+    <script src="js/layout.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+
+        ////index  ////multipul silder 
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false
+                }
+            }]
+        });
+    });
+    </script>
+</body>

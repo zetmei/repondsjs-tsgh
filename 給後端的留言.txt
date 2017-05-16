@@ -1,0 +1,14 @@
+＊頁面地圖-共五頁
+https://zetmei.github.io/test--Barrier-free-tsgh/map.html
+
+＊內頁的左側選單，樣式寫好了，但我只有辦法寫到一層
+二層以上必須寫死，動態的我想不出該怎麼寫
+懇請老師跟季霖協助QQ
+子項目開闔的圖片樣式為：
+>>合併的icon
+images/layout/icon10.png
+>>打開的的icon
+images/layout/icon11.png
+
+
+＊電腦版的menu和手機板的menu分開寫

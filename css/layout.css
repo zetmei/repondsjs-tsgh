@@ -1,0 +1,407 @@
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+/*****************共用設定************** */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-family: "微軟正黑體", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+  position: relative;
+  background-color: #efefef;
+}
+h1,h2,h3,h4,h5,p{
+    color: #000;
+}
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+/* BT選單 */
+.navbar{
+    position: fixed;
+    top: 40px;
+    z-index: 2000;
+    width: 100%;
+    height: 105px;
+    border-radius: 0;
+}
+.navbar:before{
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    content: '';
+    background-color: #333435;
+    bottom: -6px;
+    left: 6px;
+}
+.navbar-default {
+    background-color: #fff;
+    border: 0;
+}
+.navbar-default .navbar-brand.logo{
+    color: #676767;
+    line-height: 45px;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #676767;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-size: 15px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #797979;
+    background-color: transparent;
+}
+.navbar-nav {
+  float: right;
+    margin-top: 27px;
+}
+/* 簽入簽出 */
+#navbar{
+    position: relative;
+}
+ul.navber-signin {
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+ul.navber-signin li {
+    display: inline-block;
+}
+ul.navber-signin li a{
+    text-shadow: 0px 1px 1px #000000;
+    color: #fff;
+}
+ul.navber-signin li a:hover{
+    text-decoration: none;
+    background-color: #484848;
+}
+
+.armyPic {
+    float: right;
+    width: 105px;
+}
+.imgRwd{
+  width: 100%;
+}
+.fixedtop {
+   top: 0;
+}
+.eraser{
+    clear: both;
+}
+.btn-default{
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: .1s;
+    /* background-color: #474747; */
+    background-color: #ffbb18;
+    /* border-color: #474747; */
+    border-color:#ffbb18;
+}
+.btn-default:hover{
+    color: #fff;
+    background-color:#524f4f;
+    border-color: #524f4f;
+}
+
+/***************** 首頁物件************** */
+.ctwrap{
+    position: relative;
+    overflow: hidden;
+}
+.bootstrapslider{
+    /* height: 100vh; */
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    /* position: absolute; */
+    z-index: 2;
+    /* padding-bottom: 70px; */
+}
+.bootstrapslider:before{
+    position: absolute;
+    z-index: 3;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.37); */
+    /* background-image: url('../images/bg1.png') ;
+    background-repeat: repeat-x;
+    background-position: left bottom; */
+}
+.bootstrapslider:after{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+.blockwarp{
+     position: absolute;
+    top: 190px;
+    z-index: 20;
+    /* background: rgba(0, 0, 0, 0.19); */
+    width: 100%;
+}
+
+
+/* slider */
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,  
+.carousel-fade .carousel-inner .active.left,  
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,  
+.carousel-fade .carousel-inner .next.left,  
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1; 
+}
+.carousel-fade .carousel-inner .next,  
+.carousel-fade .carousel-inner .prev,  
+.carousel-fade .carousel-inner .active.left,  
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+/* 區塊 */
+.armyblock{
+    /* background-color: #fff; */
+    height: 280px;/* 暫時 */
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.armycard{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 280px;
+    margin-bottom: 20px;
+}
+.armycard h3{
+    margin-top: 0;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #fff;
+    margin-left: -14px;
+}
+.armycard h3 span{
+    width: 190px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    background-color: #333435;
+    line-height: 40px;
+}
+.armycard h3 i{
+    color: #fff;
+    margin: 0 12px 0 32px;
+}
+.armycard h3 span:before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 8px;
+    bottom: -8px;
+    left: 0px;
+    background-image: url(../images/tag01.png);
+}
+.armycard h3 span:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 39px;
+    bottom: 1px;
+    right: -10px;
+    background-image: url(../images/tag02.png);
+}
+.armycard ul{
+    list-style-type: square;
+    /* color: #555; */
+    list-style-image: url(../images/list01.png);
+    padding-right: 20px;
+}
+.armycard li{
+    line-height: 26px;
+    color: #000;
+    /* font-weight: 700; */
+}
+.armycard{
+    font-weight: 700;
+}
+.innerwidth{
+    width: 86%;
+    margin: 0px 8%;
+}
+.innerwidth a{
+    text-decoration: underline;
+}
+.sepline{
+    border-right: 1px solid #a0a0a0;
+}
+/* 個別區塊 */
+.armycard.personmessage p{
+    background-color: #e3e2ea;
+    padding: 5px 8px;
+}
+.armycard.schedule i{
+    padding: 0 8px 0 0;
+    color: #888383;
+    font-size: 20px;
+
+}
+.armycard.onduty .duty{
+
+}
+.armycard.onduty h5{
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #908f8d;
+    font-weight: bolder;
+}
+.armycard.onduty .duty span{
+        display: inline-block;
+    float: right;
+    color: #4d5095;
+    font-weight: bold;
+}
+
+
+
+
+/***************** 以下為手機平板*************** */
+ @media screen and (max-width: 1200px) {
+/* header縮小成50高 */
+.navbar-default .navbar-brand.logo {
+    font-size: 25px;
+    margin-top: 0;
+}
+  .navbar {
+    top: 0;
+    height: 50px;      
+    float: right;
+    margin-top: 0px;
+  }
+  .navbar-nav {
+    float: right;
+    margin-top: 0px;
+  }
+  .armyPic{
+    float: right;
+    width: 45px;
+  }
+    .bootstrapslider {
+        display: none;
+        position: absolute; 
+    }
+    .blockwarp {
+        position: relative;
+        left: 0;
+        width: 94%;
+        margin: 0% 3%;
+        top: 70px;
+        margin-bottom: 70px;
+    }
+    .navbar:before {
+        bottom: -6px;
+        left: 0px;
+    }
+    ul.navber-signin {
+        top: 56px;
+    }
+    ul.navber-signin li {
+        display: inline-block;
+        background-color: #333435;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+    .blockwarp{
+
+    }
+    /* 手機選單出現 */
+    .navbar-collapse{
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid #000;
+    }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin: 7.5px 0;
+    }
+    .navbar-collapse{
+        margin: 0 -15px;
+        padding: 0 0;
+    }
+    .dropdown-menu{
+        text-align: center;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 30px;
+    }
+    .navbar-default .navbar-brand.logo {
+        font-size: 25px;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .armyPic{
+        display: none;
+    }
+    .armyblock{
+        width: 50%;
+        float: left;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sepline {
+        border-right: 0px solid #a0a0a0;
+    }
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 750px) {
+    .blockwarp {    
+        width: 90%;
+        margin: 0 auto 70px auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .armyblock{
+        width: 100%;
+        float: left;
+    }
+    .armycard {
+        height: initial;
+        padding-bottom: 20px;
+    }
+    .armyblock {
+        height: initial;
+    }
+
+}
+@media screen and (max-width: 460px) {
+
+}
